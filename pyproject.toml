@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "katana-file-converter"
+version = "1.0.0"
+description = "Hızlı, klavye dostu, terminalde yaşayan dosya dönüştürücü."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Uğur Çakar" }]
+keywords = ["converter", "cli", "terminal", "image", "pdf", "audio", "video"]
+
+dependencies = [
+    "pillow",
+    "questionary",
+    "pyfiglet",
+    "rich",
+    "pillow-heif",
+    "svglib",
+    "reportlab",
+    "rlPyCairo",
+    "PyYAML",
+    "xhtml2pdf",
+    "markdown-it-py",
+    "openpyxl",
+    "tomli-w",
+    "PyMuPDF",
+    "pdf2docx",
+    "ebooklib",
+    "lxml",
+    "python-docx",
+    "html2text",
+    "mammoth",
+    "python-pptx",
+    "mobi",
+    "watchdog",
+]
+
+[project.optional-dependencies]
+ocr = ["pytesseract"]  # ayrıca Tesseract binary'si kurulmalıdır
+dev = ["pytest"]
+
+[project.scripts]
+katana = "katana.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/ugurckr/katana-file-converter"
+
+[tool.setuptools.packages.find]
+include = ["katana*"]

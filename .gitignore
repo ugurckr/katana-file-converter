@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.idea/
+.claude/
+assets/.showcase-cache/
+
+# Paketleme / test artefaktları
+*.egg-info/
+build/
+dist/
+.pytest_cache/

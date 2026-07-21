@@ -1,0 +1,33 @@
+pillow
+questionary
+pyfiglet
+rich
+
+# İzleme modu (--watch) için olay tabanlı izleme; yoksa 2 sn'lik tarama fallback'i çalışır
+watchdog
+
+# Görsel & Grafik
+pillow-heif
+svglib
+reportlab
+rlPyCairo
+
+# Veri & Kod
+PyYAML
+xhtml2pdf
+markdown-it-py
+
+# Veri & Tablo
+openpyxl
+tomli-w
+
+# Doküman & Ofis
+PyMuPDF
+pdf2docx
+ebooklib
+lxml
+python-docx
+html2text
+mammoth
+python-pptx
+mobi
